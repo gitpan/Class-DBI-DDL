@@ -1,0 +1,13 @@
+Changes
+lib/Class/DBI/DDL.pm
+lib/Class/DBI/DDL/mysql.pm
+lib/Class/DBI/DDL/Pg.pm
+Makefile.PL
+MANIFEST
+README
+t/mysql.t
+t/Pg.t
+t/tables.pl
+t/tests.pl
+testenv
+META.yml                                 Module meta-data (added by MakeMaker)

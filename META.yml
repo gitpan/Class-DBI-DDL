@@ -1,10 +1,22 @@
-# http://module-build.sourceforge.net/META-spec.html
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         Class-DBI-DDL
-version:      1.01
-version_from: lib/Class/DBI/DDL.pm
-installdirs:  site
+---
+name: Class-DBI-DDL
+version: 1.02
+author:
+  - Andrew Sterling Hanenkamp <sterling@hanenkamp.com>
+abstract: Combined with Class::DBI to create and dispose of tables
+license: perl
 requires:
-
-distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.17
+  Class::DBI: 0.96
+  perl: 5.8
+recommends:
+  DBD::Pg: 0
+  DBD::SQLite: 0
+  DBD::mysql: 0
+provides:
+  Class::DBI::DDL:
+    file: lib/Class/DBI/DDL.pm
+    version: 1.02
+  Class::DBI::DDL::Pg:
+    file: lib/Class/DBI/DDL/Pg.pm
+    version: 1.01
+generated_by: Module::Build version 0.2611
